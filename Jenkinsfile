@@ -17,7 +17,7 @@ pipeline {
     stage ('Deploy') {
       steps {
         script {
-          deploy adapters: [tomcat9(credentialsId: '14019c80-40d8-48d8-adac-e33325b5a049', path: '', url: 'http://localhost:9090')], contextPath: '/pipeline', onFailure: false, war: 'Users/haithem/.jenkins/workspace/dployAppByJenkinsFile/target/simpleWebApp-0.0.1-SNAPSHOT.war'
+          deploy adapters: [tomcat9(credentialsId: '14019c80-40d8-48d8-adac-e33325b5a049', path: '', url: 'http://localhost:9090')], contextPath: '/pipeline', onFailure: false, war: '**/*.war'
         }
       }
     }
