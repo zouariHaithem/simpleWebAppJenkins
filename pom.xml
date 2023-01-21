@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>hz.jenkins</groupId>
 	<artifactId>simpleWebApp</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>simpleWebApp</name>
 	<description>build simple app with Jenkins</description>
@@ -30,7 +30,7 @@
 		<connection>scm:git:https://github.com/zouariHaithem/simpleWebAppJenkins.git</connection>
 		<url>https://github.com/zouariHaithem/simpleWebAppJenkins</url>
 		<developerConnection>scm:git:https://github.com/zouariHaithem/simpleWebAppJenkins.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>v@{project.version}</tag>
   </scm>
 	<dependencies>
 		<dependency>
